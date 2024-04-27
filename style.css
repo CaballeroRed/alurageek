@@ -9,6 +9,15 @@ header {
     font-size: 50px;
 }
 
+p {
+    color: red;
+
+
+}
+
+body {
+    background-color: darkgray;
+}
 
 footer {
     display: flex;
@@ -27,6 +36,86 @@ footer {
 footer>h3>span {
     margin-left: 20px;
     font-size: 20px;
-    color: aquamarine;
+    color: rgb(124, 243, 201);
 
+}
+
+.producto__imagen {
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+
+
+
+}
+
+/** grid **/
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+
+    }
+
+}
+
+.formulario_agregar {
+    background-color: rgb(65, 77, 83);
+    height: 400px;
+    padding: 10px;
+}
+
+#Enviar_btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 15px;
+    background-color: black;
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+#Limpiar_btn {
+    height: 50px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 0px;
+    background-color: black;
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+input {
+    padding: 10px;
+    display: flex;
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    margin: 15px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 0;
 }
