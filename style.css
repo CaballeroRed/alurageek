@@ -1,23 +1,62 @@
-header {
+.encabezado {
     display: flex;
     justify-content: center;
-    margin-top: 0px;
+    flex: auto;
     padding: 30px;
     background-color: black;
-    height: 100px;
+    width: 100%;
     color: white;
     font-size: 50px;
+    position: fixed;
+    top: 0;
+
 }
 
-p {
-    color: red;
+h1 {
+    font-size: 50px;
+    color: white;
+    border: solid 2px black;
+    width: 98%;
+    background-image: url(/filtrado\ y\ mantenimientomensual.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 100;
+    padding: 30px;
+
+}
+
+main {
+
+    margin-top: 200px;
+}
+
+.producto__info {
+    text-transform: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    background-color: black;
+    padding: 10px;
+    width: 280px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 5px 5px 5px rgb(7, 7, 6);
+
 
 
 }
 
 body {
     background-color: darkgray;
+    background-image: linear-gradient(to top, grey 0%, white 100%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+
+
+
 
 footer {
     display: flex;
@@ -26,8 +65,9 @@ footer {
     background-color: black;
     color: white;
     font-size: 30px;
-    height: 50px;
+    height: 100%;
     padding: 30px;
+    width: 100%;
 
 }
 
@@ -37,13 +77,24 @@ footer>h3>span {
     margin-left: 20px;
     font-size: 20px;
     color: rgb(124, 243, 201);
+    font-weight: 100;
 
 }
 
+/*
+.producto {
+    display: grid;
+    grid-template-columns: 1fr, 2fr;
+    width: 350px;
+}
+*/
 .producto__imagen {
     height: 300px;
     width: 300px;
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 5px 5px 5px black;
+    flex-grow: 5;
+
 
 
 
@@ -52,25 +103,52 @@ footer>h3>span {
 /** grid **/
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    /**display: grid;
+    grid-template-columns: 2fr 2fr;
     column-gap: 10px;
+**/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
 
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .grid {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 10px;
-
+        /** grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;**/
+        display: flex;
+        flex-flow: column wrap;
     }
 
+
+
+}
+
+.producto a {
+    text-decoration: none;
+
+}
+
+.titulo_formulario {
+    height: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .formulario_agregar {
+    display: flex;
+    justify-content: center;
     background-color: rgb(65, 77, 83);
     height: 400px;
+    width: 400px;
     padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#seccion_formulario {
+
+    width: 410px;
+    box-shadow: 10px 7px 10px rgb(18, 19, 16);
 }
 
 #Enviar_btn {
@@ -108,14 +186,16 @@ input {
     margin: 15px;
     border: none;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 100;
 }
 
 h2 {
     background-color: black;
     color: whitesmoke;
+    width: 400px;
     border: none;
     font-size: 30px;
     padding: 10px;
     margin-bottom: 0;
+    border-radius: 5px 5px 0px 0px;
 }
