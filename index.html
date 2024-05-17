@@ -14,35 +14,43 @@
     <main class="contenedor">
         <section>
             <h1>Nuestros Productos</h1>
-            <div class="grid">
+            <div data-product class="grid">
                 <div class="producto">
                     <a href="#">
-                        <img class="producto__imagen" src="estanque, cascada 2m2.jpg" alt="estanque2metros">
+                        <div>
+                            <img class="producto__imagen" src="estanque, cascada 2m2.jpg" alt="estanque2metros">
+                        </div>
+
                         <div class="producto__info">
                             <p class="producto__nombre">Estanque A</p>
                             <p class="producto__precio">$200</p>
+                            <button onclick="alert('apreto boton')" class="btn-borrar">borrar</button>
                         </div>
                     </a>
 
-
                 </div>
+
                 <div class="producto">
                     <a href="#">
-                        <img class="producto__imagen" src="3m2.jpg" alt="estanque3metros">
+                        <div><img class="producto__imagen" src="3m2.jpg" alt="estanque3metros"></div>
+
                         <div class="producto__info">
                             <p class="producto__nombre">Estanque B</p>
                             <p class="producto__precio">$400</p>
+                            <button class="btn-borrar">borrar</button>
                         </div>
                     </a>
-
-
                 </div>
+
                 <div class="producto">
                     <a href="#">
-                        <img class="producto__imagen" src="sinfiltro.jpg" alt="estanquesinfiltro">
+                        <div><img class="producto__imagen" src="sinfiltro.jpg" alt="estanquesinfiltro">
+                        </div>
+
                         <div class="producto__info">
                             <p class="producto__nombre">Estanque C</p>
                             <p class="producto__precio">$500</p>
+                            <button class="btn-borrar">borrar</button>
                         </div>
                     </a>
 
@@ -50,10 +58,13 @@
                 </div>
                 <div class="producto">
                     <a href="#">
-                        <img class="producto__imagen" src="filtradonatural.jpg" alt="estanquenatural">
+                        <div><img class="producto__imagen" src="filtradonatural.jpg" alt="estanquenatural">
+                        </div>
+
                         <div class="producto__info">
                             <p class="producto__nombre">Estanque D</p>
                             <p class="producto__precio">$500</p>
+                            <button class="btn-borrar">borrar</button>
                         </div>
                     </a>
 
@@ -61,10 +72,14 @@
                 </div>
                 <div class="producto">
                     <a href="#">
-                        <img class="producto__imagen" src="filtradoartificial.jpg" alt="estanquefiltradoartific.">
+                        <div>
+                            <img class="producto__imagen" src="filtradoartificial.jpg" alt="estanquefiltradoartific.">
+                        </div>
+
                         <div class="producto__info">
                             <p class="producto__nombre">Estanque E</p>
                             <p class="producto__precio">$700</p>
+                            <button class="btn-borrar">borrar</button>
                         </div>
                     </a>
 
@@ -72,11 +87,15 @@
                 </div>
                 <div class="producto">
                     <a href="#">
-                        <img class="producto__imagen" src="filtrado y mantenimientomensual.jpg"
-                            alt="estanquecristalino">
+                        <div>
+                            <img class="producto__imagen" src="filtrado y mantenimientomensual.jpg"
+                                alt="estanquecristalino">
+                        </div>
+
                         <div class="producto__info">
                             <p class="producto__nombre">Estanque F</p>
                             <p class="producto__precio">$1500</p>
+                            <button class="btn-borrar">borrar</button>
                         </div>
                     </a>
 
@@ -89,12 +108,17 @@
         <section id="seccion_formulario">
             <h2 class="titulo_formulario">Agregar Producto</h2>
             <div class="formulario_agregar">
-                <form class="formulario">
-                    <input class="ingreso_datos" type="text" name="nombre" id="nombre_Producto" placeholder="nombre">
-                    <input class="ingreso_datos" type="text" name="precio" id="precio_Producto" placeholder="precio">
-                    <input class="ingreso_datos" type="text" name="imagen" id="imagen_Producto" placeholder="imagen">
-                    <button onclick="" id="Enviar_btn">Enviar</button>
-                    <button id="Limpiar_btn">Limpiar</button>
+                <form class="formulario" data-form>
+                    <input data-name class="ingreso_datos" type="text" name="nombre" id="nombre_Producto"
+                        placeholder="nombre">
+                    <input data-price class="ingreso_datos" type="text" name="precio" id="precio_Producto"
+                        placeholder="precio">
+                    <input data-image class="ingreso_datos" type="text" name="imagen" id="imagen_Producto"
+                        placeholder="imagen">
+                    <div>
+                        <button type="submit" onclick="alert('apreto boton')" id="Enviar_btn">Enviar</button>
+                        <button type="reset" id="Limpiar_btn">Limpiar</button>
+                    </div>
                 </form>
 
 
@@ -112,5 +136,8 @@
 <footer>
     <h3>AluraGeek <span>Desarrollado por Marcelo Ichusti</span> </h3>
 </footer>
+<script src="script.js"></script>
+
+
 
 </html>

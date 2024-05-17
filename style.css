@@ -58,28 +58,7 @@ body {
 
 
 
-footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 800px;
-    background-color: black;
-    color: white;
-    font-size: 30px;
-    height: 100%;
-    padding: 30px;
-    width: 100%;
 
-}
-
-
-
-footer>h3>span {
-    margin-left: 20px;
-    font-size: 20px;
-    color: rgb(124, 243, 201);
-    font-weight: 100;
-
-}
 
 /*
 .producto {
@@ -95,9 +74,14 @@ footer>h3>span {
     box-shadow: 5px 5px 5px black;
     flex-grow: 5;
 
+}
 
-
-
+.btn-borrar {
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    padding: 5px;
 }
 
 /** grid **/
@@ -169,7 +153,8 @@ footer>h3>span {
     width: 120px;
     border-radius: 5px;
     border: none;
-    margin-left: 0px;
+    margin-left: 5px;
+    margin-top: 5px;
     background-color: black;
     color: aliceblue;
     font-weight: 400;
@@ -198,4 +183,27 @@ h2 {
     padding: 10px;
     margin-bottom: 0;
     border-radius: 5px 5px 0px 0px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 800px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    height: 100%;
+    padding: 30px;
+    width: 100%;
+
+}
+
+
+
+footer>h3>span {
+    margin-left: 20px;
+    font-size: 20px;
+    color: rgb(124, 243, 201);
+    font-weight: 100;
+
 }

@@ -1,0 +1,40 @@
+{
+    "products": [
+        {
+            "name": "Estanque A",
+            "price": "$200",
+            "image": "https://www.zooplus.es/magazine/wp-content/uploads/2019/02/fotolia_110607072-768x493.jpg",
+            "id": 1
+        },
+        {
+            "name": "Estanque B",
+            "price": "$500",
+            "image": "https://www.hola.com/imagenes/decoracion/20220617211966/mantenimiento-estanque-jardin-mc/1-102-809/mantenimiento-estanque-t.jpg",
+            "id": 2
+        },
+        {
+            "name": "Estanque C",
+            "price": "800",
+            "image": "https://www.hola.com/imagenes/decoracion/20220617211966/mantenimiento-estanque-jardin-mc/1-102-801/mantenimiento-estanque-2-a.jpg",
+            "id": 3
+        },
+        {
+            "name": "Estanque D",
+            "price": "1000",
+            "image": "https://cdn.shopify.com/s/files/1/0404/7172/4181/files/BAR-LagosTeayudamos2-1500x1000px_1024x1024.jpg?v=1611679339",
+            "id": 4
+        },
+        {
+            "name": "Estanque E",
+            "price": "1500",
+            "image": "https://www.maquituls.es/noticias/wp-content/uploads/2018/07/PORTADA.jpg",
+            "id": 5
+        },
+        {
+            "name": "Mantenimiento",
+            "price": "200",
+            "image": "https://mejorconsalud.as.com/wp-content/uploads/2017/09/elaboracion-estanque-hecho-en-casa.jpg",
+            "id": 6
+        }
+    ]
+}
