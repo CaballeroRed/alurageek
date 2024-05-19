@@ -16,7 +16,7 @@ function createGrid(name, price, image, id) {
     <div class="producto__info">
         <p class="producto__nombre">${name}</p>
         <p class="producto__precio">${price}</p>
-        <button onclick="alert('apreto boton')" class="btn-borrar">borrar</button>
+        <button  class="btn-borrar" id="${id}">borrar</button>
     </div>
 </a>
      
@@ -24,7 +24,15 @@ function createGrid(name, price, image, id) {
     productContainer.appendChild(card);
     return card;
 }
+//----------------------------------------------
 
+const btnBorrar = document.querySelector(".btn-borrar")
+btnBorrar.addEventListener("click", () => {
+    const id = btnBorrar.id
+    console.log("el click",);
+})
+
+//----------------------------------
 const render = async () => {
     try {
         const listaProductos = await servicesProducts.productList();
@@ -34,8 +42,8 @@ const render = async () => {
                 createGrid(
                     product.name,
                     product.price,
-                    product.image,
-                    product.id
+                    product.image
+
 
                 )
             )
@@ -57,5 +65,11 @@ form.addEventListener("submit", (event) => {
         .catch((err) => console.log(err));
 });
 
+
+
+
+
+
 render();
+
 

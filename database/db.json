@@ -37,16 +37,22 @@
       "id": "6"
     },
     {
-      "id": "b52b",
       "name": "estanque F",
       "price": "3000",
-      "image": "https://www.pisos.com/aldia/wp-content/uploads/2021/06/estanque-piscina.jpg"
+      "image": "https://www.pisos.com/aldia/wp-content/uploads/2021/06/estanque-piscina.jpg",
+      "id": "7"
     },
     {
-      "id": "086c",
       "name": "carpas Koi ",
       "price": "20",
-      "image": "https://especiespro.es/wp-content/uploads/2018/05/filtracion-estanque.jpg"
+      "image": "https://especiespro.es/wp-content/uploads/2018/05/filtracion-estanque.jpg",
+      "id": "8"
+    },
+    {
+      "id": "1ac3",
+      "name": "filtrado ",
+      "price": "25",
+      "image": "https://www.aquariumkeeping.co.uk/cdn/shop/articles/Do_i_need_a_filter_on_my_pond_1.jpg?v=1708592909"
     }
   ]
 }

@@ -7,7 +7,7 @@ const productList = () => {
 
 
 
-const createProduct = (name, price, image) => {
+const createProduct = (name, price, image, id) => {
     return fetch("http://localhost:3000/products", {
         method: "POST",
         headers: {
@@ -17,6 +17,7 @@ const createProduct = (name, price, image) => {
             name,
             price,
             image,
+            id,
         })
     })
         .then((res) => res.json())
@@ -24,7 +25,12 @@ const createProduct = (name, price, image) => {
 
 };
 
+
 export const servicesProducts = {
-    productList,
-    createProduct
+    createProduct,
+    productList
+
 };
+
+
+
