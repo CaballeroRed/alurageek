@@ -185,6 +185,18 @@ footer {
 
 }
 
+.icono_Contacto {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 15px;
+
+
+
+}
+
+
+
 
 
 footer>h3>span {
@@ -192,5 +204,6 @@ footer>h3>span {
     font-size: 20px;
     color: rgb(124, 243, 201);
     font-weight: 100;
+
 
 }
