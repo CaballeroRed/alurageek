@@ -4,11 +4,14 @@ const productContainer = document.querySelector("[data-product]");
 const form = document.querySelector("[ data-form]");
 
 
+
+
 function createGrid(name, price, image, id) {
     const card = document.createElement("div");// creando un div dinamico
     card.classList.add("producto")// asignandole estilo al div creado reciente. 
 
-    card.innerHTML = `<a href="#">
+
+    const contenido = `<a href="#">  
     <div>
         <img class="producto__imagen" src="${image}">
     </div>
@@ -19,18 +22,39 @@ function createGrid(name, price, image, id) {
         <button  class="btn-borrar" id="${id}">borrar</button>
     </div>
 </a>
-     
-    `;
+     `;
+    card.innerHTML = contenido;
+
+
+
+
     productContainer.appendChild(card);
+    card.dataset.id = id;
     return card;
 }
 //----------------------------------------------
 
-const btnBorrar = document.querySelector(".btn-borrar")
-btnBorrar.addEventListener("click", () => {
-    const id = btnBorrar.id
-    console.log("el click",);
-})
+const produc = document.querySelector("[data-product]");
+
+produc.addEventListener("click", async (evento) => {
+    alert("el click funciona");
+    let deleteButton = evento.target.className === "btn-borrar";
+    if (deleteButton) {
+        const producto = evento.target.closest("[data-id]");
+        let id = producto.dataset.id;
+        servicesProducts
+            .deleteProducto(id)
+            .then((res) => {
+                produc.remove();
+                console.log(res);
+            })
+            .catch((err) => console.log(err));
+    }
+});
+//===========================================================
+
+
+
 
 //----------------------------------
 const render = async () => {
@@ -42,11 +66,12 @@ const render = async () => {
                 createGrid(
                     product.name,
                     product.price,
-                    product.image
+                    product.image,
+                    product.id
 
 
                 )
-            )
+            );
         });
     }
     catch (error) {
@@ -71,5 +96,6 @@ form.addEventListener("submit", (event) => {
 
 
 render();
+
 
 

@@ -12,6 +12,7 @@
 
 }
 
+
 h1 {
     font-size: 50px;
     color: white;
@@ -80,17 +81,16 @@ body {
     background-color: black;
     color: white;
     font-size: 1.2rem;
-    border: none;
-    padding: 5px;
+    border: solid 1px rgb(184, 255, 17);
+    border-radius: 5px;
+    padding: 10px;
+
 }
 
 /** grid **/
 
 .grid {
-    /**display: grid;
-    grid-template-columns: 2fr 2fr;
-    column-gap: 10px;
-**/
+
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
